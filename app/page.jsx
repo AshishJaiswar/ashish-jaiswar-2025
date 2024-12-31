@@ -1,3 +1,10 @@
+import { Button } from "@/components/ui/button";
+import NavBar from "@/components/NavBar";
+
 export default function Home() {
-  return <h1>Ashish Jaiswar</h1>;
+  return (
+    <div>
+      <NavBar />
+    </div>
+  );
 }
