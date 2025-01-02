@@ -7,12 +7,13 @@ const NavBar = () => {
   return (
     <nav className="arial flex justify-between items-center py-5">
       <div className="flex">
-        <Image src={logo} width={35} height={40} alt="A" />
+        <div className="w-8 h-10 flex items-center">
+          <Image src={logo} alt="A" />
+        </div>
         <NavLinks />
       </div>
       <div className="flex flex-col tracking-wide text-sm">
-        <span className="text-gray-500">Mumbai, India</span>
-        <span className="font-semibold">16:46 pm</span>
+        <span className="font-semibold">16:46 PM</span>
       </div>
     </nav>
   );
