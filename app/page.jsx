@@ -1,9 +1,8 @@
-import { Button } from "@/components/ui/button";
 import NavBar from "@/components/NavBar";
 
 export default function Home() {
   return (
-    <div>
+    <div className="text-gray-800">
       <NavBar />
     </div>
   );
