@@ -11,7 +11,7 @@ const Hero = () => {
         <p>Hey!</p>
         <div className="flex items-center">
           <span>I’m</span>
-          <div className="w-20 cursor-pointer rounded-full border-gray-600 border-4 p-1 ml-5">
+          <div className="w-20 cursor-pointer rounded-full border-light-blue border-4 p-1 ml-5">
             <Image
               className="rounded-full"
               src={ashish_jaiswar}
@@ -22,7 +22,7 @@ const Hero = () => {
         <p>Ashish</p>
         <p>Jaiswar</p>
       </div>
-      <div className="absolute -bottom-60 sm:static sm:mx-4">
+      <div className="absolute -bottom-60 lg:static sm:mx-4">
         <h3 className="text-2xl mb-3 md:text-3xl">
           A web developer based in Mumbai, India.
         </h3>
@@ -30,8 +30,11 @@ const Hero = () => {
           Developing responsive and scalable web interfaces for digital
           platforms.
         </p>
-        <Button className="px-8 mr-6">Say Hi!</Button>
-        <Button variant="outline" className="px-8 border-gray-300">
+        <Button className="px-8 mr-6 rounded-xl font-normal">Say Hi!</Button>
+        <Button
+          variant="outline"
+          className="px-8 border-gray-300 rounded-xl font-normal"
+        >
           My work
         </Button>
       </div>
