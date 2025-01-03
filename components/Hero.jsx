@@ -6,12 +6,12 @@ import ashish_jaiswar from "../public/ashish_jaiswar.jpg";
 import { FaXTwitter, FaLinkedin, FaGithub } from "react-icons/fa6";
 const Hero = () => {
   return (
-    <div className="mt-20 flex items-center justify-between relative">
+    <div className="mt-20 flex items-center justify-between relative px-5 md:px-32">
       <div className="inline-block text-7xl leading-tight">
         <p>Hey!</p>
         <div className="flex items-center">
           <span>I’m</span>
-          <div className="w-20 cursor-pointer rounded-full border-light-blue border-4 p-1 ml-5">
+          <div className="w-20 transition-all hover:scale-200 cursor-pointer rounded-full border-light-blue hover:border-4 p-1 ml-5">
             <Image
               className="rounded-full"
               src={ashish_jaiswar}
@@ -35,7 +35,7 @@ const Hero = () => {
           variant="outline"
           className="px-8 border-gray-300 rounded-xl font-normal"
         >
-          My work
+          See my work
         </Button>
       </div>
       <div className="text-gray-600">
