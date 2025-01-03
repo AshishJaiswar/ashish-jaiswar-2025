@@ -9,7 +9,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        "light-blue": "hsl(var(--light-blue))",
+        bisque: "hsl(var(--bisque))",
+        "flora-white": "hsl(var(--flora-white))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

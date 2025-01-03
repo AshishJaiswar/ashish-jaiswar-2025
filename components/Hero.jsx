@@ -11,7 +11,7 @@ const Hero = () => {
         <p>Hey!</p>
         <div className="flex items-center">
           <span>I’m</span>
-          <div className="w-20 transition-all hover:scale-200 cursor-pointer rounded-full border-light-blue hover:border-4 p-1 ml-5">
+          <div className="w-20 transition-all hover:scale-200 cursor-pointer rounded-full border-bisque hover:border-4 ml-5">
             <Image
               className="rounded-full"
               src={ashish_jaiswar}
@@ -39,21 +39,21 @@ const Hero = () => {
         </Button>
       </div>
       <div className="text-gray-600">
-        <div className="border rounded-full border-gray-300 p-2 my-4">
-          <Link href="https://www.linkedin.com/in/ashishjaiswar">
+        <Link href="https://www.linkedin.com/in/ashishjaiswar">
+          <div className="border rounded-full transition-all delay-75 p-2 border-gray-300 my-4 hover:text-gray-800 hover:border-gray-600">
             <FaLinkedin size="25px" />
-          </Link>
-        </div>
-        <div className="border rounded-full border-gray-300 p-2 my-4">
-          <Link href="https://twitter.com/ashishjaiswar_">
+          </div>
+        </Link>
+        <Link href="https://twitter.com/ashishjaiswar_">
+          <div className="border rounded-full transition-all delay-75 p-2 border-gray-300 my-4 hover:text-gray-800 hover:border-gray-600">
             <FaXTwitter size="25px" />
-          </Link>
-        </div>
-        <div className="border rounded-full border-gray-300 p-2 my-4">
-          <Link href="https://github.com/AshishJaiswar">
+          </div>
+        </Link>
+        <Link href="https://github.com/AshishJaiswar">
+          <div className="border rounded-full transition-all delay-75 p-2 border-gray-300 my-4 hover:text-gray-800 hover:border-gray-600">
             <FaGithub size="25px" />
-          </Link>
-        </div>
+          </div>
+        </Link>
       </div>
     </div>
   );
