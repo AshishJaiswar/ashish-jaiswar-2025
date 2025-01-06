@@ -1,55 +1,43 @@
 import React from "react";
 import Image from "next/image";
+import { buttonVariants } from "./ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
-import recifood from "@/public/recifood.jpg";
-import gamehub from "@/public/gamehub.jpg";
+import { selectedWorkData } from "@/data/selected-work";
 
 const SelectedWork = () => {
   return (
     <div className=" bg-bisque px-5 pt-5 md:px-32">
       <h1 className="text-3xl mb-10">Selected Works</h1>
-      <div className="lg:grid grid-cols-2 gap-4 py-4">
-        <Card className="mb-6">
-          <CardContent className="p-2 rounded-lg bg-flora-white">
-            <Image src={recifood} className="rounded-lg" alt="Recifood" />
-            <h4 className="mt-4 mb-2 font-semibold text-gray-800">
-              Recifood - Random recipe and recipe search App
-            </h4>
-            <p className="text-gray-600 text-sm">
-              Recifood, your ultimate culinary companion, is not just a random
-              food picker and recipe search app.
-            </p>
-            <div className="mt-4 mb-2">
-              <Link
-                className="bg-gray-900 hover:bg-gray-600 transition text-gray-100 px-8 py-2 rounded-lg"
-                href="https://recifood-ruby.vercel.app/"
-              >
-                Visit
-              </Link>
-            </div>
-          </CardContent>
-        </Card>
-        <Card className="mb-6">
-          <CardContent className="p-2 rounded-lg bg-flora-white">
-            <Image src={gamehub} className="rounded-lg" alt="Gamehub" />
-            <h4 className="mt-4 mb-2 font-semibold text-gray-800">
-              Gamehub - Your game library
-            </h4>
-            <p className="text-gray-600 text-sm">
-              Game hub is a game library app built with React & Chakra UI using
-              Rawg.io dataset.
-            </p>
-            <div className="mt-4 mb-2">
-              <Link
-                className="bg-gray-900 hover:bg-gray-600 transition text-gray-100 px-8 py-2 rounded-lg"
-                href="https://game-hub-hazel-pi.vercel.app/"
-              >
-                Visit
-              </Link>
-            </div>
-          </CardContent>
-        </Card>
+      <div className="lg:grid grid-cols-2 gap-8 py-4">
+        {selectedWorkData.map((work, index) => (
+          <Card className="mb-6" key={index}>
+            <CardContent className="p-2 rounded-lg bg-flora-white">
+              <Image
+                src={work.image}
+                className="rounded-lg"
+                alt={work.title}
+                width={1000}
+                height={1000}
+              />
+              <h4 className="mt-4 mb-2 font-semibold text-gray-800">
+                {work.title}
+              </h4>
+              <p className="text-gray-600 text-sm">{work.description}</p>
+              <div className="mt-4 mb-2">
+                <Link
+                  target="_blank"
+                  className={`${buttonVariants({
+                    variant: "default",
+                  })} px-8 mr-6 rounded-xl font-normal`}
+                  href={work.link}
+                >
+                  Visit
+                </Link>
+              </div>
+            </CardContent>
+          </Card>
+        ))}
       </div>
     </div>
   );

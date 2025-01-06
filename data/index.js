@@ -6,7 +6,7 @@ import {
   SiFreecodecamp,
 } from "react-icons/si";
 
-const experienceData = [
+export const experienceData = [
   {
     company: "Accenture",
     role: "Sr. Frontend developer",
@@ -27,7 +27,7 @@ const experienceData = [
   },
 ];
 
-const awardsData = [
+export const awardsData = [
   {
     title: "INSTA Award",
     company: "Infosys",
@@ -50,5 +50,3 @@ const awardsData = [
     link: "https://www.freecodecamp.org/certification/ashishjaiswar/javascript-algorithms-and-data-structures-v8",
   },
 ];
-
-export { experienceData, awardsData };

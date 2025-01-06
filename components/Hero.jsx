@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import ashish_jaiswar from "../public/ashish_jaiswar.jpg";
 import {
   FaXTwitter,
@@ -38,13 +38,24 @@ const Hero = () => {
           Developing responsive and scalable web interfaces for digital
           platforms.
         </p>
-        <Button className="px-8 mr-6 rounded-xl font-normal">Say Hi!</Button>
-        <Button
-          variant="outline"
-          className="px-8 border-gray-300 rounded-xl font-normal"
+        <Link
+          target="_blank"
+          className={`${buttonVariants({
+            variant: "default",
+          })} px-8 mr-6 rounded-xl font-normal`}
+          href="mailto:ashishjaiswar771@gmail.com"
+        >
+          Say Hi!
+        </Link>
+        <Link
+          target="_blank"
+          className={`${buttonVariants({
+            variant: "outline",
+          })} px-8 border-gray-300 rounded-xl font-normal`}
+          href=""
         >
           See my work
-        </Button>
+        </Link>
       </div>
       <div className="text-gray-600">
         <Link href="https://www.linkedin.com/in/ashishjaiswar">
