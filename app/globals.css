@@ -6,6 +6,9 @@ body {
   font-family: var(--font-inter), Arial, Helvetica, sans-serif;
 }
 
+::selection {
+  background-color: burlywood;
+}
 @layer base {
   :root {
     --background: 0 0% 100%;

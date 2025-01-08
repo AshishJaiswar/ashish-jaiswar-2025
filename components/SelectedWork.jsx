@@ -7,7 +7,7 @@ import { selectedWorkData } from "@/data/selected-work";
 
 const SelectedWork = () => {
   return (
-    <div className=" bg-bisque px-5 pt-5 md:px-32">
+    <div className="bg-bisque px-5 pt-5 pb-20 md:px-32">
       <h1 className="text-3xl mb-10">Selected Works</h1>
       <div className="lg:grid grid-cols-2 gap-8 py-4">
         {selectedWorkData.map((work, index) => (
@@ -27,7 +27,7 @@ const SelectedWork = () => {
               <div className="mt-4 mb-2">
                 <Link
                   target="_blank"
-                  className={`${buttonVariants({
+                  className={`bg-gray-700 ${buttonVariants({
                     variant: "default",
                   })} px-8 mr-6 rounded-xl font-normal`}
                   href={work.link}

@@ -6,7 +6,7 @@ import { experienceData, awardsData } from "@/data";
 
 const Highlights = () => {
   return (
-    <div className="mt-80 lg:mt-28 bg-bisque px-5 py-10 md:px-32 lg:flex justify-between">
+    <div className="mt-80 lg:mt-28 bg-bisque px-5 pt-20 pb-10 md:px-32 lg:flex justify-between">
       <div className="lg:mr-5 lg:w-1/2">
         <h1 className="text-3xl mb-10">Working Experience</h1>
         {experienceData.map((data, index) => (
