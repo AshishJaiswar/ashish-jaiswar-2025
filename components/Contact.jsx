@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
+import Time from "./Time";
 
 const Contact = () => {
   return (
@@ -9,15 +10,21 @@ const Contact = () => {
       <h2 className="text-3xl my-5 font-medium">
         Let's bring it to life together!
       </h2>
-      <Link
-        target="_blank"
-        className={`${buttonVariants({
-          variant: "default",
-        })} px-8 mt-5 rounded-xl font-normal`}
-        href="mailto:ashishjaiswar771@gmail.com"
-      >
-        Talk with me
-      </Link>
+      <div>
+        <Link
+          target="_blank"
+          className={`${buttonVariants({
+            variant: "default",
+          })} px-8 mt-5 rounded-xl font-normal`}
+          href="mailto:ashishjaiswar771@gmail.com"
+        >
+          Talk with me
+        </Link>
+      </div>
+      <div className="mt-8 flex justify-center text-sm ">
+        <span className="mr-2 text-gray-600">My local time</span>
+        <Time />
+      </div>
     </div>
   );
 };

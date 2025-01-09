@@ -3,6 +3,7 @@ import Image from "next/image";
 import logo from "../public/logo.svg";
 import NavLinks from "./NavLinks";
 import Link from "next/link";
+import Time from "./Time";
 
 const NavBar = () => {
   return (
@@ -17,7 +18,7 @@ const NavBar = () => {
       </div>
       <div className="flex flex-col tracking-wide text-sm">
         <span className="text-gray-600">Mumbai, India</span>
-        <span className="font-semibold">16:46 PM</span>
+        <Time />
       </div>
     </nav>
   );
