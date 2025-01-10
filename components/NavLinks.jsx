@@ -19,7 +19,7 @@ const components = [
   },
   {
     title: "Blogs",
-    href: "/blogs",
+    href: "https://medium.com/@ashishjaiswar",
     description:
       "Read my blogs on various topics like web development, design, and more.",
   },
