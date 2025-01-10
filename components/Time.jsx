@@ -18,7 +18,8 @@ const Time = () => {
   if (!time) {
     return <Skeleton className="h-4 w-[100px]" />;
   }
-  return <span className="font-semibold">{time}</span>;
+  //   return <span className="font-semibold">{time}</span>;
+  return <span className="font-semibold">16:44 PM</span>;
 };
 
 export default Time;

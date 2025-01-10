@@ -1,18 +1,20 @@
 import React from "react";
 import Image from "next/image";
-import { buttonVariants } from "./ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
-import { selectedWorkData } from "@/data/work";
+import { buttonVariants } from "./ui/button";
+import { Card, CardContent } from "./ui/card";
+import { workData } from "@/data/work";
 
-const SelectedWork = () => {
+const WorkGrid = () => {
   return (
-    <div className="bg-bisque px-5 pt-5 pb-20 md:px-32">
-      <h1 className="text-3xl mb-10">Selected Works</h1>
-      <div className="lg:grid grid-cols-2 gap-8 py-4">
-        {selectedWorkData.map((work, index) => (
+    <div className="py-10 px-5 md:px-32">
+      <h1 className="text-3xl my-5 font-medium text-center">
+        A selection of my favorite works
+      </h1>
+      <div className="mt-10 lg:grid grid-cols-2 gap-8 py-4">
+        {workData.map((work, index) => (
           <Card className="mb-6" key={index}>
-            <CardContent className="p-2 rounded-lg bg-flora-white">
+            <CardContent className="p-2 rounded-lg">
               <Image
                 src={work.image}
                 className="rounded-lg border border-gray-100"
@@ -43,4 +45,4 @@ const SelectedWork = () => {
   );
 };
 
-export default SelectedWork;
+export default WorkGrid;
