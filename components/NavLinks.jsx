@@ -16,23 +16,27 @@ const components = [
     title: "My work",
     href: "/work",
     description: "View my work and experience.",
+    target: "_self",
   },
   {
     title: "Blogs",
     href: "https://medium.com/@ashishjaiswar",
     description:
       "Read my blogs on various topics like web development, design, and more.",
+    target: "_blank",
   },
   {
     title: "Resume",
-    href: "/resume",
+    href: "https://media.graphassets.com/coeeoLRTeql2Qnmqe4EM",
     description:
       "View my resume and download it in PDF format for offline viewing.",
+    target: "_blank",
   },
   {
     title: "About me",
     href: "/me",
     description: "Learn more about me and my journey.",
+    target: "_self",
   },
 ];
 
@@ -49,6 +53,7 @@ export default function NavLinks() {
                   key={component.title}
                   title={component.title}
                   href={component.href}
+                  target={component.target}
                 >
                   {component.description}
                 </ListItem>
@@ -63,6 +68,7 @@ export default function NavLinks() {
                 key={component.title}
                 title={component.title}
                 href={component.href}
+                target={component.target}
               ></ListItem>
             ))}
           </ul>

@@ -48,11 +48,10 @@ const Hero = () => {
           Say Hi!
         </Link>
         <Link
-          target="_blank"
           className={`${buttonVariants({
             variant: "outline",
           })} px-8 border-gray-300 rounded-xl font-normal`}
-          href=""
+          href="/work"
         >
           See my work
         </Link>
