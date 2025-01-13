@@ -4,6 +4,15 @@ import {
   SiAccenture,
   SiReact,
   SiFreecodecamp,
+  SiJavascript,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiTypescript,
+  SiPython,
+  SiHtml5,
+  SiCss3,
+  SiRedux,
+  SiJest,
 } from "react-icons/si";
 
 export const experienceData = [
@@ -48,5 +57,48 @@ export const awardsData = [
     icon: <SiFreecodecamp size="30px" />,
     date: "Mar 2024",
     link: "https://www.freecodecamp.org/certification/ashishjaiswar/javascript-algorithms-and-data-structures-v8",
+  },
+];
+
+export const skillsData = [
+  {
+    title: "JavaScript",
+    icon: <SiJavascript size="30px" />,
+  },
+  {
+    title: "TypeScript",
+    icon: <SiTypescript size="30px" />,
+  },
+  {
+    title: "React",
+    icon: <SiReact size="30px" />,
+  },
+  {
+    title: "Next.js",
+    icon: <SiNextdotjs size="30px" />,
+  },
+  {
+    title: "Tailwind CSS",
+    icon: <SiTailwindcss size="30px" />,
+  },
+  {
+    title: "Python",
+    icon: <SiPython size="30px" />,
+  },
+  {
+    title: "HTML",
+    icon: <SiHtml5 size="30px" />,
+  },
+  {
+    title: "CSS",
+    icon: <SiCss3 size="30px" />,
+  },
+  {
+    title: "Redux",
+    icon: <SiRedux size="30px" />,
+  },
+  {
+    title: "Jest",
+    icon: <SiJest size="30px" />,
   },
 ];

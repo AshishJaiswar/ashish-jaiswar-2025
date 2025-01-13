@@ -42,7 +42,7 @@ const components = [
 
 export default function NavLinks() {
   return (
-    <NavigationMenu className="ml-4">
+    <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem className="md:hidden">
           <NavigationMenuTrigger>Menu</NavigationMenuTrigger>

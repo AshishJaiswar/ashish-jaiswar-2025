@@ -3,16 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import ashish_jaiswar from "../public/ashish_jaiswar.jpg";
-import {
-  FaXTwitter,
-  FaLinkedin,
-  FaGithub,
-  FaMedium,
-  FaInstagram,
-} from "react-icons/fa6";
-const Hero = () => {
-  const normal = "25px";
+import Socials from "./Socials";
 
+const Hero = () => {
   return (
     <div className="mt-20 flex items-center justify-between relative px-5 md:px-32">
       <div className="inline-block text-5xl sm:text-7xl leading-tight">
@@ -56,33 +49,7 @@ const Hero = () => {
           See my work
         </Link>
       </div>
-      <div className="text-gray-600">
-        <Link href="https://www.linkedin.com/in/ashishjaiswar">
-          <div className="border rounded-full transition-all delay-75 p-2 border-gray-300 my-4 hover:text-gray-800 hover:border-gray-600">
-            <FaLinkedin size={normal} />
-          </div>
-        </Link>
-        <Link href="https://twitter.com/ashishjaiswar_">
-          <div className="border rounded-full transition-all delay-75 p-2 border-gray-300 my-4 hover:text-gray-800 hover:border-gray-600">
-            <FaXTwitter size={normal} />
-          </div>
-        </Link>
-        <Link href="https://medium.com/@ashishjaiswar">
-          <div className="border rounded-full transition-all delay-75 p-2 border-gray-300 my-4 hover:text-gray-800 hover:border-gray-600">
-            <FaMedium size={normal} />
-          </div>
-        </Link>
-        <Link href="https://github.com/AshishJaiswar">
-          <div className="border rounded-full transition-all delay-75 p-2 border-gray-300 my-4 hover:text-gray-800 hover:border-gray-600">
-            <FaGithub size={normal} />
-          </div>
-        </Link>
-        <Link href="https://www.instagram.com/ashishjaiswar_/">
-          <div className="border rounded-full transition-all delay-75 p-2 border-gray-300 my-4 hover:text-gray-800 hover:border-gray-600">
-            <FaInstagram size={normal} />
-          </div>
-        </Link>
-      </div>
+      <Socials />
     </div>
   );
 };

@@ -7,7 +7,7 @@ import { workData } from "@/data/work";
 
 const WorkGrid = () => {
   return (
-    <div className="py-10 px-5 md:px-32">
+    <div className="p-5 md:px-32">
       <h1 className="text-3xl my-5 font-medium text-center">
         A selection of my favorite works
       </h1>
