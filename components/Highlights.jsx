@@ -46,7 +46,7 @@ const Highlights = () => {
                   <p className="text-gray-600 text-sm">{data.date}</p>
                 </div>
                 <Link href={data.link}>
-                  <div className="text-gray-600">
+                  <div className="text-gray-600 rounded-full hover:bg-flora-white p-2 transition-all">
                     <RxExternalLink size="25px" />
                   </div>
                 </Link>

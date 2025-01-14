@@ -20,7 +20,7 @@ const SelectedWork = () => {
                 width={1000}
                 height={1000}
               />
-              <h4 className="mt-4 mb-2 font-semibold text-gray-800">
+              <h4 className="mt-4 mb-2 text-lg font-semibold text-gray-800">
                 {work.title}
               </h4>
               <p className="text-gray-600 text-sm">{work.description}</p>
