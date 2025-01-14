@@ -13,6 +13,12 @@ import {
   SiCss3,
   SiRedux,
   SiJest,
+  SiSelenium,
+  SiGit,
+  SiGithub,
+  SiBitbucket,
+  SiMysql,
+  SiMongodb,
 } from "react-icons/si";
 
 export const experienceData = [
@@ -70,6 +76,10 @@ export const skillsData = [
     icon: <SiTypescript size="30px" />,
   },
   {
+    title: "Python",
+    icon: <SiPython size="30px" />,
+  },
+  {
     title: "React",
     icon: <SiReact size="30px" />,
   },
@@ -78,12 +88,12 @@ export const skillsData = [
     icon: <SiNextdotjs size="30px" />,
   },
   {
-    title: "Tailwind CSS",
-    icon: <SiTailwindcss size="30px" />,
+    title: "Redux",
+    icon: <SiRedux size="30px" />,
   },
   {
-    title: "Python",
-    icon: <SiPython size="30px" />,
+    title: "Jest",
+    icon: <SiJest size="30px" />,
   },
   {
     title: "HTML",
@@ -94,11 +104,31 @@ export const skillsData = [
     icon: <SiCss3 size="30px" />,
   },
   {
-    title: "Redux",
-    icon: <SiRedux size="30px" />,
+    title: "Tailwind CSS",
+    icon: <SiTailwindcss size="30px" />,
   },
   {
-    title: "Jest",
-    icon: <SiJest size="30px" />,
+    title: "Selenium",
+    icon: <SiSelenium size="30px" />,
+  },
+  {
+    title: "Git",
+    icon: <SiGit size="30px" />,
+  },
+  {
+    title: "Github",
+    icon: <SiGithub size="30px" />,
+  },
+  {
+    title: "Bitbucket",
+    icon: <SiBitbucket size="30px" />,
+  },
+  {
+    title: "MySQL",
+    icon: <SiMysql size="30px" />,
+  },
+  {
+    title: "MongoDB",
+    icon: <SiMongodb size="30px" />,
   },
 ];

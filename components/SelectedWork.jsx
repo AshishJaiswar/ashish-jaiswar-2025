@@ -27,7 +27,7 @@ const SelectedWork = () => {
               <div className="mt-4 mb-2">
                 <Link
                   target="_blank"
-                  className={`bg-gray-700 ${buttonVariants({
+                  className={`${buttonVariants({
                     variant: "default",
                   })} px-8 mr-6 rounded-xl font-normal`}
                   href={work.link}
