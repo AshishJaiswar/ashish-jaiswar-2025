@@ -37,9 +37,10 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://drive.google.com/uc?id=1aoF020GwJhPQ13_XwCphu6YkaSmq_MSX",
+        url: "/seo_image.jpg",
         width: 800,
         height: 600,
+        alt: "Ashish Jaiswar's Portfolio Open Graph Image",
       },
     ],
   },
