@@ -8,8 +8,41 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Ashish Jaiswar",
-  description: "",
+  title: "Ashish Jaiswar - web developer",
+  description:
+    "Web portfolio by Ashish Jaiswar showcasing career highlights, projects, and skills.",
+  keywords: [
+    "Ashish",
+    "Jaiswar",
+    "React",
+    "Next.js",
+    "JavaScript",
+    "Python",
+    "web",
+    "developer",
+    "Portfolio",
+  ],
+  creator: "Ashish Jaiswar",
+  author: "Ashish Jaiswar",
+  copyright: "Ashish Jaiswar",
+  year: "2025",
+
+  openGraph: {
+    title: "Ashish Jaiswar - web developer",
+    description:
+      "Web portfolio by Ashish Jaiswar showcasing career highlights, projects, and skills.",
+    url: "https://ashishjaiswar.in/",
+    siteName: "Ashish Jaiswar portfolio",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "https://drive.google.com/uc?id=1aoF020GwJhPQ13_XwCphu6YkaSmq_MSX",
+        width: 800,
+        height: 600,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
