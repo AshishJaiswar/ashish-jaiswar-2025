@@ -11,7 +11,7 @@ export const selectedWorkData = [
     description:
       "Game hub is a game library app built with React & Chakra UI using Rawg.io dataset.",
     link: "https://game-hub-hazel-pi.vercel.app/",
-    image: "https://drive.google.com/uc?id=1XLpDVe86Vf9bm_XX5oZ-BHHScFH0mamk",
+    image: "https://drive.google.com/uc?id=1CZqaPQf4K47CLiciAGy5Nq07CpA9mKNs",
   },
 ];
 

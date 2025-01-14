@@ -2,10 +2,11 @@ import React from "react";
 import Image from "next/image";
 import coverImage from "@/public/cover.jpg";
 import Socials from "./Socials";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const MyStory = () => {
   return (
-    <div className="p-5 md:px-32">
+    <div className="p-5 md:px-32 mb-10">
       <h1 className="text-3xl my-5 font-medium text-center">Here's my story</h1>
       <div className="flex justify-center my-10">
         <Image src={coverImage} width={800} height={800} alt="Cover Image" />
@@ -27,11 +28,16 @@ const MyStory = () => {
         My mission is to build a personal brand, deliver quality work and spread
         my knowledge to the community.
       </p>
-      <p className="leading-7 [&:not(:first-child)]:mt-6">
-        Feel free to connect with me on my socials to stay updated with my
-        latest projects and insights.
-      </p>
-      <Socials className="flex justify-between w-64" />
+      <div className="flex items-center">
+        <p className="leading-7 [&:not(:first-child)]:mt-6">
+          Feel free to connect with me on my socials to stay updated with my
+          latest projects and insights.
+        </p>
+        <span className="mx-3">
+          <FaLongArrowAltRight />
+        </span>
+        <Socials className="flex justify-between w-64" />
+      </div>
     </div>
   );
 };

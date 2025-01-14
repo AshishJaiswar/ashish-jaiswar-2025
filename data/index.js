@@ -132,3 +132,5 @@ export const skillsData = [
     icon: <SiMongodb size="30px" />,
   },
 ];
+
+export const resumeLink = "https://media.graphassets.com/coeeoLRTeql2Qnmqe4EM";

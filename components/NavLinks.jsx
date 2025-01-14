@@ -10,6 +10,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import { resumeLink } from "@/data";
 
 const components = [
   {
@@ -27,7 +28,7 @@ const components = [
   },
   {
     title: "Resume",
-    href: "https://media.graphassets.com/coeeoLRTeql2Qnmqe4EM",
+    href: resumeLink,
     description:
       "View my resume and download it in PDF format for offline viewing.",
     target: "_blank",

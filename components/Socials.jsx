@@ -13,27 +13,27 @@ const Socials = (props) => {
   return (
     <div className="text-gray-600" {...props}>
       <Link href="https://www.linkedin.com/in/ashishjaiswar">
-        <div className="border rounded-full transition-all delay-75 p-2 border-gray-300 my-4 hover:text-gray-800 hover:border-gray-600">
+        <div className="transition-all delay-50 p-2 my-4 hover:text-gray-800 hover:bg-bisque rounded-full">
           <FaLinkedin size={normal} />
         </div>
       </Link>
       <Link href="https://twitter.com/ashishjaiswar_">
-        <div className="border rounded-full transition-all delay-75 p-2 border-gray-300 my-4 hover:text-gray-800 hover:border-gray-600">
+        <div className="transition-all delay-50 p-2 my-4 hover:text-gray-800 hover:bg-bisque rounded-full">
           <FaXTwitter size={normal} />
         </div>
       </Link>
       <Link href="https://medium.com/@ashishjaiswar">
-        <div className="border rounded-full transition-all delay-75 p-2 border-gray-300 my-4 hover:text-gray-800 hover:border-gray-600">
+        <div className="transition-all delay-50 p-2 my-4 hover:text-gray-800 hover:bg-bisque rounded-full">
           <FaMedium size={normal} />
         </div>
       </Link>
       <Link href="https://github.com/AshishJaiswar">
-        <div className="border rounded-full transition-all delay-75 p-2 border-gray-300 my-4 hover:text-gray-800 hover:border-gray-600">
+        <div className="transition-all delay-50 p-2 my-4 hover:text-gray-800 hover:bg-bisque rounded-full">
           <FaGithub size={normal} />
         </div>
       </Link>
       <Link href="https://www.instagram.com/ashishjaiswar_/">
-        <div className="border rounded-full transition-all delay-75 p-2 border-gray-300 my-4 hover:text-gray-800 hover:border-gray-600">
+        <div className="transition-all delay-50 p-2 my-4 hover:text-gray-800 hover:bg-bisque rounded-full">
           <FaInstagram size={normal} />
         </div>
       </Link>

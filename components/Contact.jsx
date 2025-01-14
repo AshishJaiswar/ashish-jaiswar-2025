@@ -22,7 +22,7 @@ const Contact = () => {
         </Link>
       </div>
       <div className="mt-8 flex justify-center text-sm ">
-        <span className="mr-2 text-gray-600">My local time</span>
+        <span className="mr-2 text-gray-600">My local time:</span>
         <Time />
       </div>
     </div>

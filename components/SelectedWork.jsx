@@ -11,7 +11,7 @@ const SelectedWork = () => {
       <h1 className="text-3xl mb-10">Selected Works</h1>
       <div className="lg:grid grid-cols-2 gap-8 py-4">
         {selectedWorkData.map((work, index) => (
-          <Card className="mb-6 bg-flora-white" key={index}>
+          <Card className="mb-6" key={index}>
             <CardContent className="p-2 rounded-lg">
               <Image
                 src={work.image}

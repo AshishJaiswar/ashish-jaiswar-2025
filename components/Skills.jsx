@@ -2,7 +2,7 @@ import React from "react";
 import Marquee from "@/components/ui/marquee";
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
-import { skillsData } from "@/data";
+import { skillsData, resumeLink } from "@/data";
 
 const Skills = () => {
   return (
@@ -42,9 +42,9 @@ const Skills = () => {
           className={`${buttonVariants({
             variant: "outline",
           })} px-8 mt-5 rounded-xl font-normal`}
-          href=""
+          href={resumeLink}
         >
-          Resume
+          See my resume
         </Link>
       </div>
     </div>
