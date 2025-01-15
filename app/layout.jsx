@@ -8,6 +8,7 @@ const inter = Inter({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://ashishjaiswar.in.com"),
   title: "Ashish Jaiswar - web developer",
   description:
     "Web portfolio by Ashish Jaiswar showcasing career highlights, projects, and skills.",
