@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://ashishjaiswar.in.com"),
+  metadataBase: new URL("https://ashishjaiswar.in"),
   title: "Ashish Jaiswar - web developer",
   description:
     "Web portfolio by Ashish Jaiswar showcasing career highlights, projects, and skills.",
@@ -32,7 +32,7 @@ export const metadata = {
     title: "Ashish Jaiswar - web developer",
     description:
       "Web portfolio by Ashish Jaiswar showcasing career highlights, projects, and skills.",
-    url: "https://ashishjaiswar.in/",
+    url: "https://ashishjaiswar.in",
     siteName: "Ashish Jaiswar portfolio",
     locale: "en_US",
     type: "website",
