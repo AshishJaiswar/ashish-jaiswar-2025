@@ -51,8 +51,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   const gtmId = process.env.GTMID;
-  const gtag = process.env.GTAG;
-
+  const id = process.env.MEASUREMENTID;
   return (
     <html lang="en">
       <body className={`${inter.variable} antialiased text-gray-800`}>
@@ -60,7 +59,7 @@ export default function RootLayout({ children }) {
         {children}
       </body>
       <GoogleTagManager gtmId={gtmId} />
-      <GoogleAnalytics gaId={gtag} />
+      <GoogleAnalytics measurementId={id} />
     </html>
   );
 }
