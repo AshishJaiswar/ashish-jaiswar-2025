@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import coverImage from "@/public/cover.jpg";
 import Socials from "./Socials";
-import { FaLongArrowAltRight } from "react-icons/fa";
 
 const MyStory = () => {
   return (
@@ -28,16 +27,11 @@ const MyStory = () => {
         My mission is to build a personal brand, deliver quality work and spread
         my knowledge to the community.
       </p>
-      <div className="flex items-center">
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
-          Feel free to connect with me on my socials to stay updated with my
-          latest projects and insights.
-        </p>
-        <span className="mx-3">
-          <FaLongArrowAltRight />
-        </span>
-        <Socials className="flex justify-between w-64" />
-      </div>
+      <p className="leading-7 [&:not(:first-child)]:mt-6">
+        Feel free to connect with me on my socials to stay updated with my
+        latest projects and insights.
+      </p>
+      <Socials className="flex justify-between w-64" />
     </div>
   );
 };
