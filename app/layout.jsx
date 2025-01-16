@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import NavBar from "@/components/NavBar";
 import "./globals.css";
 
@@ -54,6 +55,7 @@ export default function RootLayout({ children }) {
         <NavBar />
         {children}
       </body>
+      <GoogleAnalytics gaId="G-DSP745BWQ2" />
     </html>
   );
 }
