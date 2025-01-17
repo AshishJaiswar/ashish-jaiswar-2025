@@ -1,7 +1,6 @@
 import { Inter } from "next/font/google";
-import { GoogleTagManager } from "@next/third-parties/google";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import NavBar from "@/components/NavBar";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -50,16 +49,14 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const gtmId = process.env.GTMID;
-  const id = process.env.MEASUREMENTID;
   return (
     <html lang="en">
+      <GoogleTagManager gtmId={process.env.GTMID} />
       <body className={`${inter.variable} antialiased text-gray-800`}>
         <NavBar />
         {children}
       </body>
-      <GoogleTagManager gtmId={gtmId} />
-      <GoogleAnalytics measurementId={id} />
+      <GoogleAnalytics gaId={process.env.GAID} />
     </html>
   );
 }
