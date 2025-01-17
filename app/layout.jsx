@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import NavBar from "@/components/NavBar";
-import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -51,24 +51,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        {/* <!-- Google tag (gtag.js) --> */}
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-ERRL9ETTWP"
-        ></Script>
-        <Script>
-          {`window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-ERRL9ETTWP');`}
-        </Script>
-      </head>
       <body className={`${inter.variable} antialiased text-gray-800`}>
         <NavBar />
         {children}
       </body>
+      <GoogleAnalytics gaId={process.env.GAID} />
     </html>
   );
 }
