@@ -10,19 +10,20 @@ const inter = Inter({
 
 export const metadata = {
   metadataBase: new URL("https://ashishjaiswar.in"),
-  title: "Ashish Jaiswar - web developer",
+  title: "Ashish Jaiswar - web developer portfolio",
   description:
     "Web portfolio by Ashish Jaiswar showcasing career highlights, projects, and skills.",
   keywords: [
-    "Ashish",
-    "Jaiswar",
-    "React",
-    "Next.js",
-    "JavaScript",
-    "Python",
-    "web",
-    "developer",
+    "Ashish Ramesh Jaiswar",
+    "React developer",
+    "Next.js developer",
+    "JavaScript developer",
+    "Python developer",
+    "Automation developer",
+    "web developer",
     "Portfolio",
+    "RJ college",
+    "Mumbai",
   ],
   creator: "Ashish Jaiswar",
   author: "Ashish Jaiswar",
@@ -30,7 +31,7 @@ export const metadata = {
   year: "2025",
 
   openGraph: {
-    title: "Ashish Jaiswar - web developer",
+    title: "Ashish Jaiswar - web developer portfolio",
     description:
       "Web portfolio by Ashish Jaiswar showcasing career highlights, projects, and skills.",
     url: "https://ashishjaiswar.in",
