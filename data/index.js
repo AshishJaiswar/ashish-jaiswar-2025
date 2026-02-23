@@ -133,4 +133,4 @@ export const skillsData = [
   },
 ];
 
-export const resumeLink = "https://media.graphassets.com/coeeoLRTeql2Qnmqe4EM";
+export const resumeLink = "https://dw13.short.gy/0ezpDf";
